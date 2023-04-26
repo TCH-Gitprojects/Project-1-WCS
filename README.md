@@ -148,6 +148,6 @@ Les KPIs ainsi déterminés ont été représentés sous la forme de Dataviz via
 
 # Examples de Data viz réalisées pour ce projet :
 
-![20230426103517](https://user-images.githubusercontent.com/127731574/234518462-e5190713-ef99-4ef8-88b1-9184595fe256.png)
+![20230426103635](https://user-images.githubusercontent.com/127731574/234518896-27aa95a6-74c8-4ef0-b4a3-aabfd091e951.png)
 
 ![20230426103241](https://user-images.githubusercontent.com/127731574/234517837-274b1386-e92e-4160-8753-f3f0cefc1e37.png)
