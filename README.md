@@ -147,3 +147,5 @@ GROUP BY country;
 Les KPIs ainsi déterminés ont été représentés sous la forme de Dataviz via PowerBI / Tableau et présenté lors d'un entretien en présence de notre formateur et du reste de la promo.
 
 # Data viz :
+
+![20230426103241](https://user-images.githubusercontent.com/127731574/234517837-274b1386-e92e-4160-8753-f3f0cefc1e37.png)
