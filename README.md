@@ -42,7 +42,7 @@ La base de donnée pour notre étude de cas ce présente ainsi ->
 <img width="795" alt="20230426094757" src="https://user-images.githubusercontent.com/127731574/234506340-d27574d9-09b4-4576-a3b6-763d9a95f53b.png">
 
 Nous avons donc fait nos reqûetes par rapport à ce fichier afin d'apporter une réponse à chacune de nos user stories ->
-```bash
+```sql
 /* USER STORY - LOGISTICS - Je souhaite connaitre le stock des 5 meilleures ventes de mes produits toutes catégories confondues. */
 USE toys_and_models;
 
