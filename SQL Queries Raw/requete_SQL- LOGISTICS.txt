@@ -1,0 +1,56 @@
+/* USER STORY - LOGISTICS - Je souhaite connaitre le stock des 5 meilleures ventes de mes produits toutes catégories confondues. */
+USE toys_and_models;
+
+
+/*  ETAPE 1: établir le total des ventes pour chaque produit */ 
+SELECT productCode,  SUM(quantityOrdered) AS total_des_ventes	-- addition des produits vendus (total_des_ventes) sélectionnés par ID
+FROM orderdetails			-- Colonne du détail des ventes
+GROUP BY productCode;
+
+/* ETAPE 2: déterminer les 5 meilleures ventes */
+SELECT productCode, SUM(quantityOrdered) AS total_des_ventes, orderDate
+FROM orderdetails
+INNER JOIN orders ON orderdetails.orderNumber=orders.orderNumber
+GROUP BY productCode, orderDate
+ORDER BY total_des_ventes DESC					-- classement du total_des_ventes par ordre décroissant
+LIMIT 5;										-- utilisation de la limite pour sélectionner les 5 premiers
+
+/* ETAPE 3: établir le stock actuel des 5 meilleures ventes */ 
+SELECT  products.productCode, productName,productLine, total_des_ventes,quantityInStock
+FROM products
+INNER JOIN (
+  SELECT productCode, SUM(quantityOrdered) AS total_des_ventes		-- JOINTURE  DE LA TABLE products AVEC LA REQUETE ETAPE 2
+  FROM orderdetails													 
+  GROUP BY productCode
+  ORDER BY total_des_ventes DESC
+  LIMIT 5
+) orderdetails ON products.productCode = orderdetails.productCode;
+
+
+
+
+
+
+-- Requêtes bonus pour afficher par mois le détail des ventes des 5 meilleurs moddèles et leur stock
+
+
+
+SELECT *
+FROM
+(SELECT products.productCode, productName, productLine,
+SUM(quantityOrdered) AS total_des_ventes, quantityInStock,
+DATE_FORMAT(orderDate, "%Y-%m") AS commande_par_mois,
+RANK() OVER(PARTITION BY DATE_FORMAT(orderDate, "%Y-%m"), orderDate ORDER BY orderDate DESC) AS ranking
+FROM products
+INNER JOIN orderdetails ON products.productCode = orderdetails.productCode
+INNER JOIN orders ON orders.orderNumber = orderdetails.orderNumber
+GROUP BY products.productCode, commande_par_mois, orderDate
+ORDER BY DATE_FORMAT(orderDate, "%Y-%m") DESC, total_des_ventes DESC) AS five_best_sellers
+WHERE ranking<6;
+
+
+
+
+
+
+
