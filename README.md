@@ -151,3 +151,14 @@ Les KPIs ainsi déterminés ont été représentés sous la forme de Dataviz via
 ![20230426103635](https://user-images.githubusercontent.com/127731574/234518896-27aa95a6-74c8-4ef0-b4a3-aabfd091e951.png)
 
 ![20230426103241](https://user-images.githubusercontent.com/127731574/234517837-274b1386-e92e-4160-8753-f3f0cefc1e37.png)
+
+# L'équipe ayant réalisé ce projet :
+
+<p>https://www.linkedin.com/in/tonychatri/<br>
+https://www.linkedin.com/in/simonvauthier/<br>
+https://www.linkedin.com/in/nicolas-rayjal-2927741a/<br>
+https://www.linkedin.com/in/emmanuellele-gal/</p>
+
+<div align="center">
+  <center><h1>Merci à tous</h1></center>
+</div>
