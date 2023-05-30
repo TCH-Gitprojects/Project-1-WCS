@@ -158,7 +158,7 @@ Les KPIs ainsi déterminés ont été représentés sous la forme de Dataviz via
 # L'équipe ayant réalisé ce projet :
 
 <p>https://www.linkedin.com/in/tonychatri/<br>
-https://www.linkedin.com/in/simonvauthier/<br>
+https://www.linkedin.com/in/simonvauthier/ https://github.com/SimonVauthier<br>
 https://www.linkedin.com/in/nicolas-rayjal-2927741a/<br>
 https://www.linkedin.com/in/emmanuellele-gal/</p>
 
