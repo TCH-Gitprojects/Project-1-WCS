@@ -5,6 +5,9 @@
 
 Projet de groupe réalisé dans le cadre de la formation de DATA ANALYST à la Wild Code School de Nantes. A partir d'une base de données issue d'une entreprise de modèles réduits, nous devions extraire et traiter des informations pertinentes afin de répondre aux besoins du client.
 
+## Accès à la présentation (sans les visu Tableau) : 
+https://github.com/TCH-Gitprojects/Project-1-WCS/blob/f3797f2464226110f674fa7b53794598dcd4c89e/pr%C3%A9sentation_Toys_CIE_WCS_03_2023.pdf
+
 ## 4 thématiques pour notre étude de cas :
 
 Finances , HR, Logistics, Sales
